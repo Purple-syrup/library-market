@@ -5,7 +5,7 @@
       "chainId": "4",
       "contracts": {
         "Library": {
-          "address": "0xcdB25aA30aF6bbE029E8348CaD9a0D37293C0c85",
+          "address": "0x81a46773176b18E4aC2C4eaA456553Bb7242cc8F",
           "abi": [
             {
               "inputs": [
@@ -253,19 +253,6 @@
                 {
                   "internalType": "uint256",
                   "name": "price",
-                  "type": "uint256"
-                }
-              ],
-              "stateMutability": "view",
-              "type": "function"
-            },
-            {
-              "inputs": [],
-              "name": "getLatestPrice",
-              "outputs": [
-                {
-                  "internalType": "uint256",
-                  "name": "",
                   "type": "uint256"
                 }
               ],
