@@ -19,7 +19,7 @@ export default function PrivateLibrary({ writeContracts, tx, privateLibrary, mai
     try {
       console.log("writeContracts", writeContracts);
       let waveTnx;
-      const newPrice = prompt("Please enter the selling price for your file in USD");
+      const newPrice = prompt("Please enter the selling price for your file in WEI");
       console.log(newPrice);
       // setPrice(newPrice);
       waveTnx = await tx(writeContracts.Library.publicSale(id, newPrice));
