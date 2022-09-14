@@ -6,7 +6,6 @@ import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 contract Library
 {
 
-    AggregatorV3Interface internal priceFeed;
     /*
     *@notice Instance of Library Item
     */
@@ -65,7 +64,6 @@ contract Library
     constructor(address _owner)
     {
         owner= _owner;
-        priceFeed =  AggregatorV3Interface(0x8A753747A1Fa494EC906cE90E9f37563A8AF630e);
     }
 
     /*
@@ -167,10 +165,9 @@ contract Library
     *@param arrayID the position of the item in the public items array
     */
     function buyItem(uint256 _arrayID) external payable
-    // guys we have to test this to ensure enough gas is calculated by metamask to also execute the transfer
     {
         content memory c= publicLib[_arrayID];
-        uint256 feed = (c.price * 10 ** 26) / getLatestPrice();
+        uint256 feed = c.price;
         if(msg.value!=feed)
         {
             revert incorrectPrice({
@@ -191,23 +188,10 @@ contract Library
     function assetPrice(uint256 _arrayID)external view returns(uint256)
     {
         content memory c= publicLib[_arrayID];
-        uint256 feed = ((c.price * 10 ** 26) / getLatestPrice());
+        uint256 feed = (c.price);
         return feed;
     }
 
-     /*
-     *@notice Returns the latest price
-     */
-    function getLatestPrice() public view returns (uint) {
-        (
-            /*uint80 roundID*/,
-            int price,
-            /*uint startedAt*/,
-            /*uint timeStamp*/,
-            /*uint80 answeredInRound*/
-        ) = priceFeed.latestRoundData();
-        return uint(price);
-    }
 
      /*
      *@notice changes the owners address
