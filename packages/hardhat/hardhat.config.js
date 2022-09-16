@@ -20,7 +20,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 */
 
 // Select the network you want to deploy to here:
-const defaultNetwork = "rinkeby";
+const defaultNetwork = "evmos";
 
 const mainnetGwei = 115;
 
@@ -52,6 +52,10 @@ module.exports = {
       url: "http://localhost:8545",
       // notice no mnemonic here? it will just use account 0 of the hardhat node to deploy
       // (you can put in a mnemonic here to set the deployer locally)
+    },
+    evmos:{
+      url: "https://eth.bd.evmos.dev:8545",
+      accounts: [""]
     },
     rinkeby: {
       url: "https://rinkeby.infura.io/v3/ec6a8acd1d354717acec099ad46a0bab", // <---- YOUR INFURA ID! (or it won't work)

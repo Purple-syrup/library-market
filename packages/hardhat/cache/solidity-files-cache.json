@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/workspace/library-market/packages/hardhat/contracts/Library.sol": {
-      "lastModificationDate": 1663171145380,
-      "contentHash": "7892aa9277702fab173794689d257e56",
+      "lastModificationDate": 1663257115776,
+      "contentHash": "dabf07dabffc31a7af814944e0b0a439",
       "sourceName": "contracts/Library.sol",
       "solcConfig": {
         "version": "0.8.12",
@@ -35,9 +35,7 @@
           }
         }
       },
-      "imports": [
-        "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol"
-      ],
+      "imports": [],
       "versionPragmas": [
         "^0.8.12"
       ],

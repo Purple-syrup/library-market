@@ -99,6 +99,14 @@ export const NETWORKS = {
     blockExplorer: "",
     rpcUrl: `http://localhost:7545`,
   },
+  evmos:{
+    name: "Evmos Testnet",
+    color: "#50a0ea",
+    chainId: 9000,
+    blockExplorer: "https://evm.evmos.dev",
+    rpcUrl: "https://eth.bd.evmos.dev:8545",
+    
+  },
   rinkebyArbitrum: {
     name: "Arbitrum Testnet",
     color: "#50a0ea",
