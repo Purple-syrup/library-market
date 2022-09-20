@@ -55,7 +55,7 @@ module.exports = {
     },
     evmos:{
       url: "https://eth.bd.evmos.dev:8545",
-      accounts: [""]
+      accounts: ["8e4566504fa5044eadf71bfe21d885bdbcb70d0c45ba4a6359345c6aa3aedccf"]
     },
     rinkeby: {
       url: "https://rinkeby.infura.io/v3/ec6a8acd1d354717acec099ad46a0bab", // <---- YOUR INFURA ID! (or it won't work)

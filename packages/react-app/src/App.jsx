@@ -27,8 +27,12 @@ import { Transactor } from "./helpers";
 import { useContractConfig } from "./hooks";
 
 const { BufferList } = require("bl");
-const ipfsAPI = require("ipfs-http-client");
-const ipfs = ipfsAPI({ host: "ipfs.infura.io", port: "5001", protocol: "https" });
+const key=process.env.KEY;
+const pId=process.env.PID;
+const auth ='Basic ' + Buffer.from(pId + ':' + key).toString('base64');
+const ipfsAPI = require('ipfs-http-client');
+const ipfs = ipfsAPI({ host: "ipfs.infura.io", port: "5001", protocol: "https" , headers:{authorization: auth,}});
+
 
 const { ethers } = require("ethers");
 

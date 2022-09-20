@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "./static/css/main.2c956dc4.chunk.css",
-    "main.js": "./static/js/main.4def292d.chunk.js",
-    "main.js.map": "./static/js/main.4def292d.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.b8785b89.js",
-    "runtime-main.js.map": "./static/js/runtime-main.b8785b89.js.map",
+    "main.js": "./static/js/main.d90daa06.chunk.js",
+    "main.js.map": "./static/js/main.d90daa06.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.672ebcaf.js",
+    "runtime-main.js.map": "./static/js/runtime-main.672ebcaf.js.map",
     "static/css/2.076b35f3.chunk.css": "./static/css/2.076b35f3.chunk.css",
-    "static/js/2.91367d25.chunk.js": "./static/js/2.91367d25.chunk.js",
-    "static/js/2.91367d25.chunk.js.map": "./static/js/2.91367d25.chunk.js.map",
-    "static/js/3.6393a574.chunk.js": "./static/js/3.6393a574.chunk.js",
-    "static/js/3.6393a574.chunk.js.map": "./static/js/3.6393a574.chunk.js.map",
-    "static/js/4.7473c74b.chunk.js": "./static/js/4.7473c74b.chunk.js",
-    "static/js/4.7473c74b.chunk.js.map": "./static/js/4.7473c74b.chunk.js.map",
+    "static/js/2.291938fc.chunk.js": "./static/js/2.291938fc.chunk.js",
+    "static/js/2.291938fc.chunk.js.map": "./static/js/2.291938fc.chunk.js.map",
+    "static/js/3.13062e28.chunk.js": "./static/js/3.13062e28.chunk.js",
+    "static/js/3.13062e28.chunk.js.map": "./static/js/3.13062e28.chunk.js.map",
+    "static/js/4.d85456b2.chunk.js": "./static/js/4.d85456b2.chunk.js",
+    "static/js/4.d85456b2.chunk.js.map": "./static/js/4.d85456b2.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.076b35f3.chunk.css.map": "./static/css/2.076b35f3.chunk.css.map",
     "static/css/main.2c956dc4.chunk.css.map": "./static/css/main.2c956dc4.chunk.css.map",
-    "static/js/2.91367d25.chunk.js.LICENSE.txt": "./static/js/2.91367d25.chunk.js.LICENSE.txt",
+    "static/js/2.291938fc.chunk.js.LICENSE.txt": "./static/js/2.291938fc.chunk.js.LICENSE.txt",
     "static/media/ethereumLogo.a1b9f99b.png": "./static/media/ethereumLogo.a1b9f99b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b8785b89.js",
+    "static/js/runtime-main.672ebcaf.js",
     "static/css/2.076b35f3.chunk.css",
-    "static/js/2.91367d25.chunk.js",
+    "static/js/2.291938fc.chunk.js",
     "static/css/main.2c956dc4.chunk.css",
-    "static/js/main.4def292d.chunk.js"
+    "static/js/main.d90daa06.chunk.js"
   ]
 }

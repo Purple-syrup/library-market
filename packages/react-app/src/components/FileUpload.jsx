@@ -1,10 +1,20 @@
 import React, { useState } from "react";
+//import {Buffer } from buffer
 import { Form, Button, Badge, ProgressBar, Container } from "react-bootstrap";
 // import { create as ipfsHttpClient } from "ipfs-http-client";
 // const ipfs = ipfsHttpClient("https://ipfs.infura.io:5001/api/v0");
-
 const ipfsAPI = require("ipfs-http-client");
-const ipfs = ipfsAPI({ host: "ipfs.infura.io", port: "5001", protocol: "https" });
+const projectSecret = process.env.KEY;
+const projectId = rocess.env.PID;
+const auth = 'Basic ' + Buffer.from(projectId + ':' + projectSecret).toString('base64');
+
+const ipfs = ipfsAPI({
+  url: "https://ipfs.infura.io:5001/api/v0",
+  headers: {
+    authorization:auth
+  }
+});
+//const ipfs = ipfsAPI("https://ipfs.infura.io:5001/api/v0/0d529c244fbd4cbcab71d338258e92cc");
 
 export const FileUpload = ({ setUrl, setFileObject }) => {
   const [file, setFile] = useState({});
